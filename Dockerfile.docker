@@ -27,6 +27,7 @@ RUN apt-get update --fix-missing && apt-get upgrade -y \
        libncurses-dev \
        openjdk-14-jdk \
        git \
+       ccache \
        cppcheck \
        mono-complete \
        ruby-full \
