@@ -17,25 +17,20 @@ RUN apt-get update --fix-missing && apt-get upgrade -y \
        python3-pip \
        python3-wheel \
        python3-setuptools \
-       gcc \
-       g++ \
+       gcc-10 \
+       g++-10 \
        gobjc \
        gobjc++ \
        gfortran \
        gdc \
        rustc \
-       libncurses-dev \
-       openjdk-14-jdk \
+       default-jre \
+       default-jdk \
        git \
        ccache \
        cppcheck \
        mono-complete \
-       ruby-full \
     && rm -rf /var/lib/apt/lists/*
-
-RUN gem install \
-        bundler \
-        rake
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
