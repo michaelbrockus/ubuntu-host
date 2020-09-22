@@ -29,7 +29,6 @@ RUN apt-get update --fix-missing && apt-get upgrade -y \
        git \
        ccache \
        cppcheck \
-       mono-complete \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip3 -q install --upgrade pip \
