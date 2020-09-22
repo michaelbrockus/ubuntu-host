@@ -24,12 +24,19 @@ RUN apt-get update --fix-missing && apt-get upgrade -y \
        gfortran \
        gdc \
        rustc \
-       default-jre \
+       libncurses-dev \
        default-jdk \
+       default-jre \
        git \
        ccache \
        cppcheck \
+       mono-complete \
+       ruby-full \
     && rm -rf /var/lib/apt/lists/*
+
+RUN gem install \
+        bundler \
+        rake
 
 RUN pip3 -q install --upgrade pip \
     && python3 -m pip -q install \
