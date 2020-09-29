@@ -30,6 +30,7 @@ RUN apt-get update --fix-missing && apt-get dist-upgrade -y \
        ccache \
        cppcheck \
        mono-complete \
+       gnustep-devel \
        ruby-full \
     && rm -rf /var/lib/apt/lists/*
 
