@@ -16,6 +16,7 @@ RUN apt-get update --fix-missing && apt-get dist-upgrade -y \
        python3-wheel \
        python3-setuptools \
        pkg-config \
+       mono-devel \
        gcc-10 \
        g++-10 \
        gdc \
